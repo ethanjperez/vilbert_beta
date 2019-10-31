@@ -13,17 +13,13 @@ conda create -n vilbert python=3.6
 conda activate vilbert
 git clone https://github.com/jiasenlu/vilbert_beta
 cd vilbert_beta
+conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
 pip install -r requirements.txt
 ```
 
-2. Install pytorch
-```
-conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
-```
+2. Install apx, follows https://github.com/NVIDIA/apex
 
-3. Install apx, follows https://github.com/NVIDIA/apex
-
-4. compile tools
+3. compile tools
 
 ```
 cd tools/refer
